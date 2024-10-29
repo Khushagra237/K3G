@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>K3G Distributors Bhopal</title>
+    
+    <style>
+        /* Basic responsive styles for navigation and layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        /* For larger screens */
+        @media (min-width: 768px) {
+            nav ul {
+                flex-direction: row;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0 15px;
+            }
+        }
+        /* Ensure images scale properly on mobile */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Adjust layout for sections */
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .product-list {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    </style>
+    
+    <style>
+        /* Basic responsive styles for navigation and layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        /* For larger screens */
+        @media (min-width: 768px) {
+            nav ul {
+                flex-direction: row;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0 15px;
+            }
+        }
+        /* Ensure images scale properly on mobile */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Adjust layout for sections */
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .product-list {
+                flex-direction: row;
+                justify-content: space-around;
+            } 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="file:///C:/Users/HP/Desktop/Khush%20the%20Boss/CODING/code/GULMOHAR%20OUTLET/K3G_1_mailto_optimized%20(1).html#contact">Outlet</a></li>
+            </ul>
+        </nav>
+        <h1>K3G Distributors Bhopal</h1>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h2>Welcome to K3G Distributors</h2>
+            <p>Your trusted partner in distribution and supply in Bhopal.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>K3G Distributors is a leading distributor in Bhopal, offering a range of products with a focus on quality and customer satisfaction.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <h3>BIKES</h3>
+                <img src="https://bd.gaadicdn.com/processedimages/hero/splendor-plus-xtec/source/splendor-plus-xtec665968736dd79.jpg" alt="Hero Motorcycle">
+            </div>
+            <div class="product">
+                <h3>ELECTRIC BIKES</h3>
+                <img src="https://www.rushlane.com/wp-content/uploads/2022/03/hero-splendor-electric-motorcycle-launch-price-3.jpg" alt="Hero Splendor Electric Motorcycle">
+            </div>
+            <div class="product">
+                <h3>SCOOTERS</h3>
+                <img src="https://images.carandbike.com/bike-images/big/hero/destini-125/hero-destini-125.jpg?v=18" alt="Hero Destini 125">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="sendMail(); return false;">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit">Send Message</button><br>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    
+    <script>
+        // JavaScript for form submission
+        function sendMail() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var formMessage = document.getElementById("formMessage");
+            
+            if (name && email && message) {
+                formMessage.textContent = "Thank you, " + name + ". Your message has been sent successfully!";
+                formMessage.style.color = "green";
+            } else {
+                formMessage.textContent = "Please fill in all fields.";
+                formMessage.style.color = "red";
+            }
+        }
+    </script>
+    
+</body>
+</html>
